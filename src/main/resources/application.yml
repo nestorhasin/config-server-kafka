@@ -1,5 +1,5 @@
 server:
-    port: 8888
+    port: 7777
 
 spring:
     application:
@@ -13,6 +13,11 @@ spring:
                 default-label: master
 
 management:
+    server:
+        port: 7777
+    info:
+        env:
+            enabled: true
     endpoints:
         web:
             exposure:
